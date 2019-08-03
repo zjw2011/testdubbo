@@ -2,11 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>org.lemonframework.openapi</groupId>
-        <artifactId>openapi-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.sanye.demo</groupId>
@@ -17,7 +12,8 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
+            <version>2.1.6.RELEASE</version>
+	</dependency>
         <!--<dependency>-->
             <!--<groupId>org.apache.dubbo</groupId>-->
             <!--<artifactId>dubbo-spring-boot-starter</artifactId>-->
@@ -25,6 +21,7 @@
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
+            <version>2.7.3</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-logging</groupId>
